@@ -212,7 +212,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #0a58ca; 
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -3490,6 +3490,7 @@ fieldset:disabled .btn {
   padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
+  font-size: inherit !important;
   color: #212529;
   text-align: inherit;
   text-decoration: none;
@@ -3537,6 +3538,11 @@ fieldset:disabled .btn {
 }
 .dropdown-menu-dark .dropdown-item {
   color: #dee2e6;
+}
+.dropdown-menu,
+.dropdown-item {
+    font-family: inherit !important;
+    font-size: inherit !important;
 }
 .dropdown-menu-dark .dropdown-item:focus,
 .dropdown-menu-dark .dropdown-item:hover {
@@ -3803,6 +3809,7 @@ fieldset:disabled .btn {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
+  color: #fff !important;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }

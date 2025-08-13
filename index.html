@@ -9,64 +9,100 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- flaticons linking here -->
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css'>
 </head>
 
 <body>
     <!-- Hero section starts here -->
     <section class="bg-primary">
-        <div class="navbar navbar-expand-lg">
-            <div class="container p-2">
-                <div class="navbar-brand">
-                    <img src="img/grillzy-logo.png" alt="Grillzy-logo-image">
+        <!-- navbar starts here -->
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <!-- brand -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="img/grillzy-logo.png" style="width:80px;" alt="Grillzy-logo-image">
+                </a>
+
+                <!-- Icons (Mobile View Only) -->
+                <div class="d-flex d-lg-none gap-3 align-items-center justify-content-center mx-sm-auto me-auto">
+                    <i
+                        class="fi fi-rr-search bg-accent-faded p-3 rounded-pill text-muted d-flex align-items-center justify-content-center"></i>
+                    <i
+                        class="fi fi-rr-shopping-bag bg-accent-faded p-3 rounded-pill text-muted d-flex align-items-center justify-content-center"></i>
+                    <a href="#" class="nav-link text-muted rounded-pill fw-bold px-3 py-2"
+                        style="border:2px solid rgb(189, 189, 189);">Log in</a>
+                    <a href="#"
+                        class="nav-link text-light btn btn-primary border-0 rounded-pill fs-5 px-3 py-2 d-none d-sm-block"
+                        style="background-color: #F49300;">Sign up</a>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav flex-row gap-4 fw-bold fs-5 mx-auto">
-                        <li class="navbar-item">
+                <!-- navbar-icon -->
+                <button class="navbar-toggler bg-accent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarcontent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- collapse section -->
+                <div class="collapse navbar-collapse" id="navbarcontent">
+                    <ul class="navbar-nav flex-lg-row flex-sm-column gap-lg-4 fw-bold fs-5 mx-lg-auto ms-2">
+                        <li class="nav-item">
                             <a class="nav-link text-muted" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted" href="#" role="button" id="navbardropdown"
+                            <a class="nav-link dropdown-toggle text-muted" href="#" role="button" id="menuDropdown"
                                 data-bs-toggle="dropdown" aria-expanded="false">Menu
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbardropdown">
-                                <li><a href="#" class="dropdown-item">menu 1</a></li>
-                                <li><a href="#" class="dropdown-item">menu 2</a></li>
-                                <li><a href="#" class="dropdown-item">menu 3</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                                <li><a href="#" class="dropdown-item">Starters</a></li>
+                                <li><a href="#" class="dropdown-item">Soups & Salads</a></li>
+                                <li><a href="#" class="dropdown-item">Main Course</a></li>
+                                <li><a href="#" class="dropdown-item">Desserts</a></li>
+                                <li><a href="#" class="dropdown-item">Beverages</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted" href="#" role="button" id="navbardropdown"
+                            <a class="nav-link dropdown-toggle text-muted" href="#" role="button" id="servicesDropdown"
                                 data-bs-toggle="dropdown" aria-expanded="false">Services
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbardropdown">
-                                <li><a href="#" class="dropdown-item">Service 1</a></li>
-                                <li><a href="#" class="dropdown-item">Service 2</a></li>
-                                <li><a href="#" class="dropdown-item">Service 3</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a href="#" class="dropdown-item">Dine-In</a></li>
+                                <li><a href="#" class="dropdown-item">Takeaway</a></li>
+                                <li><a href="#" class="dropdown-item">Home Delivery</a></li>
                             </ul>
                         </li>
-                        <li class="navbar-item">
+                        <li class="nav-item">
                             <a class="nav-link text-muted" href="#">Offers</a>
                         </li>
                     </ul>
                 </div>
-
-                <ul class="navbar-nav flex-row gap-4 align-items-center fs-5 fw-lighter">
-                    <li class="navbar-item"><i class="fi fi-rr-search bg-accent-faded p-4
-                             rounded-pill d-flex justify-content-center align-items-center text-muted"></i></li>
-                    <li class="navbar-item"><i
-                            class="fi fi-rr-shopping-bag bg-accent-faded p-4 rounded-pill d-flex justify-content-center align-items-center text-muted"></i>
+                <!-- Icons (Desktop View) -->
+                <ul class="navbar-nav flex-row gap-3 align-items-center fs-5 fw-lighter ms-lg-auto d-none d-lg-flex">
+                    <li class="nav-item"><i class="fi fi-rr-search bg-accent-faded p-3 rounded-pill text-muted"></i>
                     </li>
-                    <li class="navbar-item"><a href="#" class="nav-link text-muted rounded-pill fw-bold"
-                            style="border:2px solid rgb(189, 189, 189);padding: 1rem 2.3rem;">Log in</a></li>
-                    <li class="navbar-item"><a href="#"
-                            class="nav-link text-light btn btn-primary border-0 rounded-pill fs-5"
-                            style="background-color: #F49300;padding: 1rem 2rem;">Sign up</a></li>
+                    <li class="nav-item"><i
+                            class="fi fi-rr-shopping-bag bg-accent-faded p-3 rounded-pill text-muted"></i></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-muted rounded-pill fw-bold px-4 py-3"
+                            style="border:2px solid rgb(189, 189, 189);">Log in</a></li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link text-light border-0 rounded-pill fs-5  px-4 py-3 bg-accent">Sign up</a>
+                    </li>
                 </ul>
             </div>
         </div>
+        <!-- navbar ends here -->
+        <div class="container py-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6">
+                <h1 class="display-1 fw-bolder">Bold Flavors,</h1>
+                 <h1 class="display-1 fw-bolder">Quick Service</h1>
+            </div>
+            <div class="col-6">
 
+            </div>
 
+            </div>
+            
 
+        </div>
     </section>
     <!-- Hero section ends here -->
 
