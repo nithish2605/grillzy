@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --bs-primary:#FBF8F2 !important;
+  --bs-accent:#F49300 !important;
+  --bs-accent-light:#FFBB55;
+  --bs-accent-faded:#FFD08A;
+  --bs-secondary:#FDF0DE;
+  --bs-dark: #0E0A04;
+}
+
+body{
+    font-family: "Noto Sans JP", sans-serif !important; 
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: middle;
+  content: "";
+  border-top: 0;  
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3e%3cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: .6em;
+  background-position: center;
+  height: 1rem;
+  width: 1rem;
+}
+
+.dropdown-menu,
+.dropdown-item {
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+.text-primary {
+  color: #FBF8F2  !important;
+}
+.text-secondary {
+  color: #FDF0DE !important;
+}
+.text-dark {
+  color: #0E0A04 !important;
+}
+
+.bg-accent{
+  background-color: #F49300 !important;
+}
+.bg-accent-light{
+  background-color: #FFBB55 !important;
+}
+.bg-accent-faded{
+  background-color: #FCEBCB !important;
+}
+.bg-primary {
+  background-color: #FBF8F2 !important;
+}
+.bg-secondary {
+  background-color: #FDF0DE !important;
+}
+
+.log-in:hover{
+     color: var(--bs-dark) !important;
+     transition: .2s all ease-in;
+}
+
+.primary-hover:hover{
+    background-color: var(--bs-dark) !important;
+    color: var(--bs-light) !important;
+    transition: .2s all ease-in;
+}
+
+.collapse .nav-link:hover{
+    color: var(--bs-dark) !important;
+}
