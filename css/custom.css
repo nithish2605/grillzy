@@ -47,6 +47,9 @@ body{
 .text-dark {
   color: #0E0A04 !important;
 }
+.text-accent{
+   color: #F49300 !important;
+}
 
 .bg-accent{
   background-color: #F49300 !important;
@@ -78,3 +81,23 @@ body{
 .collapse .nav-link:hover{
     color: var(--bs-dark) !important;
 }
+
+@media (max-width:1200px) {
+  .speech-bubble{
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width:768px) {
+  .speech-bubble{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:576px) {
+  .speech-bubble{
+    font-size: 0.9rem;
+    left: 18%;
+  }
+}
+
