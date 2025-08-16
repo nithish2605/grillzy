@@ -50,6 +50,9 @@ body{
 .text-accent{
    color: #F49300 !important;
 }
+.text-accent-light{
+   color: #FFBB55 !important;
+}
 
 .bg-accent{
   background-color: #F49300 !important;
