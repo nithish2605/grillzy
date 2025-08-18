@@ -7,7 +7,7 @@ $(document).ready(function () {
         dots: true,
         autoplay: true,
         center: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 2000,
         navText: [
             '<i class="fa-solid fa-chevron-left me-5 mt-5"></i>',
             '<i class="fa-solid fa-chevron-right ms-5"></i>'

@@ -45,7 +45,7 @@ body{
   color: #FDF0DE !important;
 }
 .text-dark {
-  color: #0E0A04 !important;
+  color: #000000 !important;
 }
 .text-accent{
    color: #F49300 !important;
@@ -53,6 +53,7 @@ body{
 .text-accent-light{
    color: #FFBB55 !important;
 }
+ 
 
 .bg-accent{
   background-color: #F49300 !important;
