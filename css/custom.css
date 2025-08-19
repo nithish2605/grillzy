@@ -120,7 +120,6 @@ body {
   color: #fff;
   cursor: pointer;
 }
-
 @media (max-width:1200px) {
   .speech-bubble {
     font-size: 1.3rem;
