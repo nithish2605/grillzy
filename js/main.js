@@ -9,7 +9,7 @@ $(document).ready(function () {
         center: true,
         autoplayTimeout: 2000,
         navText: [
-            '<i class="fa-solid fa-chevron-left me-5 mt-5"></i>',
+            '<i class="fa-solid fa-chevron-left me-5 mt-lg-5 mt-4"></i>',
             '<i class="fa-solid fa-chevron-right ms-5"></i>'
         ],
         responsive: {
