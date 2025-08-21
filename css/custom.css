@@ -12,6 +12,7 @@
   --bs-accent-faded: #FFD08A;
   --bs-secondary: #FDF0DE;
   --bs-dark: #0E0A04;
+   overflow-x: hidden !important;
 }
 
 body {
