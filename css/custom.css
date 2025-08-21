@@ -127,6 +127,7 @@ html,body {
   top: 10%;
   right:2%;
 }
+
 @media (max-width:1200px) {
   .speech-bubble {
     font-size: 1.3rem;
